@@ -1,0 +1,34 @@
+.perfil_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom:300px;
+}
+.perfil_area {
+    width: 100%;
+    display: flex;
+}
+.perfil_menu {
+    background-color: blue;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil_menu ul {
+    list-style: none;
+    font-weight: bold;
+}
+.perfil_content {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil_content img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,719 @@
+.requests {
+    background: #ffffff;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 5px;
+    position: absolute;
+    right: 200px;
+    display: none;
+    flex-direction: column;
+    border: 2px solid black;
+}
+.requests_header {
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    border-bottom: 3px solid #6F716F;
+    justify-content: center;
+    align-items: center;
+}
+.requests_users {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #6F716F;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.requests_users_nome {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.requests_users img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.requests_users button {
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+}
+.left_content {
+    width: 22%;
+    border-radius: 5px 5px 0px 0px;
+    border-top: 3px solid #000000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    overflow-y: auto;
+}
+
+.left_feed_navbar {
+    width: 100%;
+    height: 100%;
+}
+.left_feed_navbar img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.left_feed_news {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.notifica_count {
+    background: red;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.left_feed_news_item {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.left_feed_news_item:hover {
+    background: #FFFFFE;
+}
+.left_feed_news_item p {
+    margin-left: 15px;
+}
+.left_feed_explore {
+    width: 100%;
+    height: 100px;
+}
+.main_content {
+    width: 55%;
+    height: 524px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.user_nav {
+    display: none;
+}
+.main_userdata {
+    background: #46629E;
+    width: 100%;
+    height: 150px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.messenger_modal {
+    background: #ffffff;
+    position: absolute;
+    display: none;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+.messenger_left {
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid #2c3e50;
+}
+.messenger_left_center {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    overflow-y: auto;
+}
+.messenger_left_header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #2d3436;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.messenger_right {
+    background: #ffffff;
+    width: 60%;
+    height: 100%;
+}
+.messenger_right_header {
+    width: 95%;
+    height: 40px;
+    margin: auto;
+    border-bottom: 3px solid #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.messenger_friend_card {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.friend_card_nome {
+    width: 90%;
+    height: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.friend_card_nome img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.user_area_chat {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.online_border {
+    background: greenyellow;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.messenger_right_header img {
+    width: 20px;
+    height: 20px;
+}
+.messenger_fechar {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.messenger_area_chat {
+    width: 95%;
+    height: 360px;
+    margin: auto;
+    overflow-y: scroll;
+}
+.chat_friend {
+    background: #ffffff;
+    width: fit-content;
+    max-width: 400px;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #95a5a6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.chat_me {
+    background: #2e86de;
+    width: fit-content;
+    max-width: 400px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.messenger_form {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.messenger_form input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: #000000;
+}
+.messenger_form_send {
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messenger_form_send img {
+    width: 20px;
+    height: 20px;
+}
+.post_area {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.post_header {
+    background: #E4E8E8;
+    width: 100%;
+    height: 40px;
+    border-top: 4px solid #2d3436;
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+}
+.post_header img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post_header_item {
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_header_item:hover {
+    background: #b2bec3;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.post_form {
+    background: #F6F7F8;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.post_form_img {
+    background: url('../images/justin_bieber_02.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post_form input {
+    background: none;
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.post_buttons {
+    background: #F6F7F8;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+.post_buttons_left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.post_buttons_right img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post_buttons_left {
+    width: 65%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post_buttons_item:hover {
+    background: #b2bec3;
+    transition: 0.5s ease;
+}
+.post_buttons_item {
+    background: #E4E8E8;
+    width: 150px;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post_buttons_right {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.post_buttons_item_right {
+    background: #46629E;
+    width: 120px;
+    height: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post_buttons_item_right:hover {
+    background: #6c5ce7;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.chat_area {
+    background: #F6F7F8;
+    position: fixed;
+    width: 320px;
+    height: 150px;
+    bottom: 0px;
+    right: 22vh;
+}
+.feed_card {
+    background: #F6F7F8;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.feed_info {
+    width: 97%;
+    height: 100%;
+    margin: auto;
+}
+.post_info_user {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.post_info_user img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.feed_name_content {
+    width: 85%;
+}
+.feed_username {
+    width: 100%;
+    height: 25px;
+    color: #4973F8;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed_username a {
+    color: #4973F8;
+    text-decoration: none;
+}
+.feed_username a:hover {
+    color: #5f27cd;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.feed_toggle {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feed_toggle img {
+    width: 20px;
+    height: 20px;
+}
+.feed_data {
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    color: #6F716F;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.post_feed_txt {
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.post_feed_txt img {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+.feed_buttons {
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.feed_buttons_item {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #46629E;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: bold;
+}
+#comentar_button {
+    width: 200px;
+}
+.feed_buttons_item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.feed_buttons_item:hover {
+    background: #6c5ce7;
+    cursor: pointer;
+    color: #F6F7F8;
+    transition: 0.5s ease;
+}
+.right_content {
+    width: 22%;
+    border-radius: 5px 5px 0px 0px;
+    border-top: 3px solid #000000;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    overflow-y: auto;
+}
+.right_content_name {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.right_content_name img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+.right_content_name a {
+}
+.right_content_name:hover {
+    background: #FFFFFE;
+}
+.right_feed_navbar {
+    width: 100%;
+    height: 100%;
+}
+.right_feed_navbar img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.right_feed_news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.notifica_count {
+    background: red;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.right_feed_news_item {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.right_feed_news_item:hover {
+    background: #FFFFFE;
+}
+.right_feed_news_item a {
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+.right_feed_news_item p {
+    margin-left: 15px;
+}
+@media (min-width:700px) and (max-width:1000px) {
+    .container {
+        width: 90%;
+    }
+    .main_content {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (min-width:320px) and (max-width:700px) {
+    .container {
+        width: 95%;
+    }
+    .main_content {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (min-width:320px) and (max-width:400px) {
+    .main_content {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (min-width:320px) and (max-width:470px) {
+    .post_buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .post_buttons_left {
+        height: 100px;
+        flex-direction: column;
+    }
+    .post_buttons_item {
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .post_buttons_right {
+        width: 50%;
+        height: 100px;
+        justify-content: center;
+    }
+    .post_buttons_item_right {
+        height: 50px;
+    }
+}
+@media (min-width:320px) and (max-width:550px) {
+    .post_form {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .post_buttons {
+        justify-content: center;
+    }
+    .post_form input {
+        width: 85%;
+        text-align: center;
+    }
+    .post_buttons_left {
+    }
+}
+@media (min-width:0px) and (max-width:320px) {
+    .container {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .no_suppot {
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width:320px) and (max-width:1000px) {
+    .left_content {
+        display: none;
+    }
+    .right_content {
+        display: none;
+    }
+    .main_content {
+        flex-direction: column;
+    }
+    .user_nav {
+        display: flex;
+        background-color: red;
+        width: 100%;
+        height: 150px;
+    }
+    .user_nav_perfil {
+        background-color: pink;
+        width: 100%;
+        height: 70px;
+    }
+    .user_nav_perfil_item_img {
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user_nav_perfil_item_img img {
+        width: 30px;
+        height: 30px;
+    }
+}
